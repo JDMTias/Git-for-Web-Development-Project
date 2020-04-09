@@ -1,0 +1,103 @@
+Completed Codepen-https://codepen.io/JDMTIas/pen/ExVYaWR?editors=1100
+  1. What is Semantic HTML? 
+    A semantic element clearly describes its meaning to both the browser and the developer.
+
+    2. What is HTML used for? 
+    It is used to display data in a graphical form rather then executing tasks.
+
+    3. What is an attribute and where do we put it? 
+    An Attribute supplies more data to an element. Attribute typically goes after an element and before the = sign.
+    ie: <element attr='info'>Data</element>
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    The H tag is used to indicate relative importance, you should only use one h1 per page.
+
+    5. Name two tags that have required attributes. 
+    img and a tag
+
+    6. What do we put in the head of our HTML document? This is where you put things that you don't want your consumer to see like fonts and Background data.
+
+    7. What is an id? it is a title that identifies an element and can only appear on a single element.
+
+    8. What elements can I add an id to? You can add them to any element however you want to use them to specific elements like an about me paragraph, so that when you are styling in css, you can manipulate that single portion instead of the entire about me section. 
+
+    9. How many times can I use the same id on a page?
+    Only Once
+
+    10. What is a class?
+     A Class is an atribute which specifies one or more classes of elements.
+
+    11. What elements can I add a class to? Any HTML Element 
+
+    12. How many times can I use the same class on a page? Multiple times 
+
+    13. How do I get my link to open in a new tab? target_'url' 
+
+    14. What is the alt attribute in the image tag used for? If the picture does not load it tells the consumer what it was, as well as if people that are hard of hearing they can hear what the image was.
+
+    15. How do I reference an id?
+    With a Hashtag
+    16. What is the difference between a section and a div?
+    A div is a generic container that groups elements, key word generic, it has no meaning. A section is a group related to a theme.
+
+    17. What is CSS used for? Primarily used for styling purposes of the HTML.
+
+    18. How to we select an element? Example - every h2 on the page it would be written as
+     h2{
+        styling goes here. // this would change every h2 in the html. 
+    }
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one. A Class is usually given to a group for example an entire about me section could be labeled <div class='aboutme'> then you could give an ID to the about me paragraph <p id='aboutmepara'>
+
+    20. How do we select classes in CSS?
+    classes are selected like so: .class {}
+
+    21. How do we select a p element with a single class of “human””? .human p {}
+
+    22. What is a parent child selector? When would this be useful? 
+    Parent child is how html stacks so a section withing a section has a parent child relationship, you would use this when you want to change something with a specific parent. if you wanted to change every <h2> that has a <div> as a parent you would type: div > h2 {
+        styling code;
+    }
+
+    23. How do you select all links within a div with the class of sidebar? .sidebar a:link {} this will only affect unvisited links, to also change visited links you would add :visited.
+
+    24. What is a pseudo selector?
+    pseudo selectors are used to define a special state of an element for example a:hover, a:link, a:visited.
+
+    25. What do we use the change the spacing between lines? Line-height: 4px;
+
+    26. What do we use to change the spacing between letters?
+    letter-spacing: 2px;
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize? you would use the text transform property, text-transform: capitalize; to change the first letter of every word. uppercase to capitalize all characters, and lowercase to lowercase all the letters. 
+  
+    28. How do I add a 1px border around my div that is dotted and black? the longhand form would be:
+    .mydiv { border: 1px dotted black;
+    }
+
+    29. How do I select everything on the page? Use the Universal asterisk selector
+
+    30. How do I write a comment in CSS?
+    /*comment goes in here*/
+    using forward slash the asterisk and closing it the same way.
+
+    31. How do I find out what file I am in, when I am using the command line? pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder? ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? You have to be absolutely sure you are deleting something you never want to see again since you can not recover it. you use rm to remove a file 
+
+    34. Why should I use version control? it allows you to go back to a working code if you mess up something in a big way. 
+
+    35. How often should I commit to github? everytime you finish a major change 
+
+    36. What is the command we would use to push our repo up to github? git push -u origin 'filename'
+    37. Walk me through Lambda's git flow. First you want to create your own version of the repo by forking it, you want to add your tl under settings and manage access, clone your repo using githubs Green Clone button, copy the url, don't use ssh yet, go back to your git bash or CLI and get to the folder where you are going to be storing this forked repo using command lines. use the git clone <link to repo> to clone the repo to the directory you are currently in. cd into the repo by using cd <repo-name>, next you are going to create a branch, use git checkout -b 'firstname-lastname' to create your own branch, you will see the name at the end go from (master) to (firstname-lastname), this means you have created a branch. Now you work on your project. After you are done with the project or when you want to save your progress you will want to commit changes on your branch by git add. this adds the repo changes and gets them ready to commit, then you type git commit -m 'your message explaining what you did' this will commit the changes you have made next you will push your changes back up to your Github repo, type git push -u origin branch name, this will push all your commits from your computer up to github, the branch name should be the same as the branch name you specified when you did git checkout -b in this case should be firstname-lastname, next you go back to github, triple check you are in your forked repo and not the master!! we are going to sumbit a PR aka pull request, click on Branch:master drop down on the bottom left side, and select your branch name in this case it was firstname-lastname click it then click the new pull request right next to it. Double check you are in your branch! This will redirect you to the pull request page. DO NOT CLICK THE CREATE PULL REQUEST UNTIL AFTER YOU HAVE COMPLETED THE NEXT STEP!! The next step click on the dropdown button that says base repository and change it to your forked repo instead of the original lambda repo, it automatically defaults to original that is why we need to change it each time. after this add your TL as a reviewer and then finally submit your pull request.  DO NOT MERGE YOUR OWN PULL REQUEST! A TL will do it after they have reviewed your work. That is Lambda GitFlow. 
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    2. What happens when an element is positioned absolutely? 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
